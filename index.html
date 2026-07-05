@@ -7,51 +7,59 @@
 
 <style>
 body{
-    font-family:Arial, sans-serif;
-    background:#f4f4f4;
+    font-family: Arial, sans-serif;
     margin:0;
+    background:#f4f4f4;
 }
 
 header{
-    background:#007bff;
+    background:#0d6efd;
     color:white;
-    padding:20px;
     text-align:center;
+    padding:20px;
+}
+
+.produk-pilihan{
+    background:gold;
+    text-align:center;
+    padding:15px;
+    font-size:20px;
+    font-weight:bold;
 }
 
 .container{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
-    padding:30px;
+    width:90%;
+    margin:auto;
 }
 
-.card{
+.produk{
     background:white;
-    width:280px;
+    margin:20px 0;
+    padding:20px;
     border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-    padding:15px;
-}
-
-.card img{
-    width:100%;
-    border-radius:10px;
+    box-shadow:0 0 5px gray;
 }
 
 button{
-    width:100%;
-    padding:10px;
-    background:#007bff;
+    background:#0d6efd;
     color:white;
     border:none;
+    padding:10px 20px;
     border-radius:5px;
     cursor:pointer;
+}
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
 }
 </style>
 
 </head>
+
 <body>
 
 <header>
@@ -59,64 +67,105 @@ button{
 <p>Selamat Datang di Toko Online Kami</p>
 </header>
 
-<section style="background:#fff3cd;padding:20px;text-align:center;">
-    <h2>⭐ Produk Pilihan</h2>
-    <img src="https://via.placeholder.com/300x250" width="250">
-    <h3>Hoodie Premium</h3>
-    <p>Diskon 20% | Harga Rp150.000</p>
-    <button>Beli Sekarang</button>
-</section>
-
-<section style="background:#28a745;color:white;padding:20px;text-align:center;">
-    <h2>🎉 Promo Mingguan</h2>
-    <p>Diskon hingga 20% untuk semua produk!</p>
-    <p>Gratis ongkir untuk pembelian minimal Rp200.000.</p>
-</section>
+<div class="produk-pilihan">
+⭐ PRODUK PILIHAN ⭐<br>
+Hoodie Premium Diskon 20%
+</div>
 
 <div class="container">
 
-<div class="card">
-<img src="https://via.placeholder.com/250x250" alt="">
+<div class="produk">
 <h2>Kaos Oversize</h2>
-<p>Ukuran: S, M, L, XL</p>
-<p>Harga mulai Rp85.000</p>
-<button>Lihat Produk</button>
+
+<p><b>Ukuran & Harga</b></p>
+
+<ul>
+<li>S = Rp80.000</li>
+<li>M = Rp85.000</li>
+<li>L = Rp90.000</li>
+<li>XL = Rp95.000</li>
+</ul>
+
+<p>Kaos berbahan Cotton Combed 30s, nyaman dipakai sehari-hari.</p>
+
+<button>Beli Sekarang</button>
+
 </div>
 
-<div class="card">
-<img src="https://via.placeholder.com/250x250" alt="">
+<div class="produk">
+
 <h2>Hoodie Premium</h2>
-<p>Ukuran: S, M, L, XL</p>
-<p>Harga mulai Rp150.000</p>
-<button>Lihat Produk</button>
+
+<p><b>Ukuran & Harga</b></p>
+
+<ul>
+<li>S = Rp150.000</li>
+<li>M = Rp160.000</li>
+<li>L = Rp170.000</li>
+<li>XL = Rp180.000</li>
+</ul>
+
+<p>Hoodie fleece premium, hangat, nyaman, cocok untuk aktivitas sehari-hari.</p>
+
+<button>Beli Sekarang</button>
+
 </div>
 
-<div class="card">
-<img src="https://via.placeholder.com/250x250" alt="">
+<div class="produk">
+
 <h2>Sepatu Casual</h2>
-<p>Ukuran:39-42</p>
-<p>Harga mulai Rp250.000</p>
-<button>Lihat Produk</button>
+
+<p><b>Ukuran & Harga</b></p>
+
+<ul>
+<li>39 = Rp220.000</li>
+<li>40 = Rp225.000</li>
+<li>41 = Rp230.000</li>
+<li>42 = Rp235.000</li>
+</ul>
+
+<p>Sepatu casual ringan, nyaman digunakan untuk kuliah maupun jalan-jalan.</p>
+
+<button>Beli Sekarang</button>
+
 </div>
-<section style="padding:20px;background:white;margin:20px;">
-    <h2>Metode Pengiriman</h2>
-    <ul>
-        <li>JNE</li>
-        <li>J&T Express</li>
-        <li>SiCepat</li>
-        <li>AnterAja</li>
-    </ul>
-</section>
-<section style="padding:20px;background:white;margin:20px;">
-    <h2>Metode Pembayaran</h2>
-    <ul>
-        <li>Transfer Bank (BCA, BRI, Mandiri)</li>
-        <li>QRIS</li>
-        <li>DANA</li>
-        <li>OVO</li>
-    </ul>
-</section>
+
+<h2>📢 Promo</h2>
+
+<p>
+Diskon hingga 20% untuk seluruh produk.<br>
+Gratis Ongkir minimal pembelian Rp200.000.
+</p>
+
+<h2>🚚 Proses Pengiriman</h2>
+
+<ol>
+<li>Pilih Produk</li>
+<li>Klik Beli Sekarang</li>
+<li>Isi Data Pembeli</li>
+<li>Pilih Jasa Pengiriman</li>
+<li>Pesanan Diproses</li>
+<li>Barang Dikirim</li>
+</ol>
+
+<h2>💳 Pembayaran</h2>
+
+<ul>
+<li>Transfer Bank BCA</li>
+<li>DANA</li>
+<li>GoPay</li>
+<li>OVO</li>
+<li>QRIS</li>
+<li>COD (Bayar di Tempat)</li>
+</ul>
+
 </div>
+
+<footer>
+
+<p>© 2026 Toko Online Genta</p>
+
+</footer>
 
 </body>
 </html>
